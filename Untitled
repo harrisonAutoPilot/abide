@@ -1,0 +1,49 @@
+<ScrollView vertical={true}
+style={styles.scroll}
+ ref={(scrollView) => {scrollView = scrollView; }}
+showsVerticalScrollIndicator={false}>
+<View style={styles.responsiveContainer}>
+<View style={styles.readingIntro}>
+<Text style={{color:'#003300',fontSize:14,fontWeight:'bold'}}>DAILY READING</Text>
+</View>
+<View style={styles.firstButtonCover}>
+<TouchableOpacity
+    style = {styles.signButton}
+     onPress={() => this.props.navigation.navigate('FirstReading')}>
+    <Text style = {styles.buttonText}  > First Reading</Text>
+ </TouchableOpacity>
+</View>
+<View style={styles.secondButtonCover}>
+<TouchableOpacity
+    style = {styles.signButton}
+     onPress={() => this.props.navigation.navigate('SecondReading')}>
+    <Text style = {styles.buttonText}  > Second Reading</Text>
+ </TouchableOpacity>
+</View>
+<View style={styles.thirdButtonCover}>
+<TouchableOpacity
+    style = {styles.signButton}
+     onPress={() => this.props.navigation.navigate('Gospel')}>
+    <Text style = {styles.buttonText}  > Gospel</Text>
+ </TouchableOpacity>
+
+</View>
+<View style={styles.resContent}>
+<View style={styles.psalm}><Text style={styles.psalmText}> Responsorial Psalm Ps 102:1-2.15-17.18-20</Text></View>
+ <View style={styles.resTitle}><Text style={styles.resTitleText}> O Lord, hear my prayer, and let my cry come to you.</Text></View>
+ <View style={styles.resContentInner}><Text style={styles.resContentText}>
+
+ 1. O LORD, hear my prayer, and let my cry come to you. Do not hide your face from me in the day of my distress. Turn your ear towards me; on the day when I call, speedily answer me. R. {"\n"}
+
+ 2. The nations shall fear the name of the LORD, and all the earth's kings your glory. When the LORD shall build up Sion, he will appear in all his glory. Then he will turn to the prayers of the helpless; he will not despise their prayers. R.{"\n"}
+
+ 3. Let this be written for ages to come,that a people yet unborn may praise the LORD the LORD looked down from his holy place on high, looked down from heaven to the earth, to hear the groans of the prisoners, and free those condemned to die. R.
+
+ </Text>
+ </View>
+
+</View>
+
+
+</View>
+</ScrollView >
